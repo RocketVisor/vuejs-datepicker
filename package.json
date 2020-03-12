@@ -28,7 +28,8 @@
   "scripts": {
     "build": "rm -rf dist/* && rollup -c scripts/build.js && rollup -c scripts/build-locale.js",
     "serve": "rollup -c scripts/serve.js --watch",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "prepare": "npm run build"
   },
   "dependencies": {},
   "peerDependencies": {
