@@ -147,7 +147,8 @@ export default {
     }
   },
   mounted () {
-    this.input = this.$el.querySelector('input')    
+    this.input = this.$el.querySelector('input')
+    console.log('v2 date');    
   }
 }
 // eslint-disable-next-line
