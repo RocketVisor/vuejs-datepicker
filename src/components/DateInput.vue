@@ -109,13 +109,14 @@ export default {
      * @param {Event} event
      */
     parseTypedDate (event) {
-      // close calendar if escape or enter are pressed
-      if ([
-        27, // escape
-        13 // enter
-      ].includes(event.keyCode)) {
-        this.input.blur()
-      }
+      
+      //Don't want the element to blur itself
+      // if ([
+      //   27, // escape
+      //   13 // enter
+      // ].includes(event.keyCode)) {        
+      //   this.input.blur()
+      // }
 
       if (this.typeable) {
         const typedDate = Date.parse(this.input.value)
@@ -146,8 +147,7 @@ export default {
     }
   },
   mounted () {
-    this.input = this.$el.querySelector('input')
-    console.log('Custom fork running for date')
+    this.input = this.$el.querySelector('input')    
   }
 }
 // eslint-disable-next-line
