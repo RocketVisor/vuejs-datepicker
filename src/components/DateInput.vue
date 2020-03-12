@@ -147,6 +147,7 @@ export default {
   },
   mounted () {
     this.input = this.$el.querySelector('input')
+    console.log('Custom fork running for date')
   }
 }
 // eslint-disable-next-line
